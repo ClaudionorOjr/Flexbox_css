@@ -1,0 +1,58 @@
+.container{
+    /*Flex*/
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/ /*nowrap*/
+    /*flex-flow: row wrap; /*comando que substitui os dois de cima*/
+    justify-content:  space-around; /*flex-star;flex-end;center; space-between*/
+    align-items: center;
+
+    height: 200px;
+    border: 1px solid tomato;
+}
+
+.item{
+
+    height: 100px; /*altura*/
+    width: 100px; /*largura*/
+    padding: 10px;
+    margin: 5px;
+    background-color: tomato;
+    color: #fff; 
+    
+}
+
+.item.primeiro {
+    align-self: flex-end;
+    order: 1;
+}
+
+.item.segundo{
+    order: 2;
+}
+
+.item.terceiro{
+    order: 3;
+}
+
+.item.quarto{
+    order: 4;
+}
+
+.item:first-child{
+    /*flex-grow: 1;
+    flex-basis: 200px;
+    flex-shrink: 2;*/
+
+    /*flex: 1 200px 2; /*atalho para as três propriedades acima*/
+}
+
+/*.item:nth-child(2){ /*entre parentese a ordem do elemento; "2n" de 2 em 2
+    flex-grow: 3;
+}*/
+
+/*@media (max-width: 400px){
+    .container{
+        flex-direction: column;
+    }
+}*/
